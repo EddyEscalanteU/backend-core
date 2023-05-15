@@ -1,2 +1,1 @@
-# backend-core
-CORE
+# BackendCORE

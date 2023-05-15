@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "backend-core", "backend-core\backend-core.shproj", "{7A36266C-C2E1-4BE3-ABFE-6F8D904EEF36}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		backend-core\backend-core.projitems*{7a36266c-c2e1-4be3-abfe-6f8d904eef36}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C2CAB26-3863-4B85-AEDA-12D7621AD78F}
+	EndGlobalSection
+EndGlobal

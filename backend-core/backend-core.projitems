@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7a36266c-c2e1-4be3-abfe-6f8d904eef36</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BackendCore</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ArrayMensaje.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DefaultArrayMensaje.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Mensaje.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Select.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\SqlDynamicParameters.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AuditFields.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Identifier.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\TypeMail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\TypeBodyMail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\TypeStatusMail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\TypeActionCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\TypeMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\TypeSizeUnits.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\BussinesException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\DataTimeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\SqlExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\HeaderExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\UtilsExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ConstantesCore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Cryptography.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FileHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Connection\IGetConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Connection\IReadConexion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Connection\IWriteConexionWithBitacora.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Connection\IWriteConexion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Security\IEncryption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Validators\IIdentifierVal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pagination\ListaPaginada.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pagination\Paginacion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pagination\PaginacionOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryFilters\PaginationQueryFilter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Security\Encryption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Validators\IdentifierVal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\DeleteFluentRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\FluentRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\Parameters\IIP.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\Parameters\IIdentifier.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\Parameters\IIdUsuarioRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\Parameters\IObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\Parameters\ITableName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\Parameters\IToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\Parameters\IDatabaseKey.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\RequestBody.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request\RequestHeaders.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Response\ApiResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Response\JoinResponsePostDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Response\ResponseGet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Response\ResponseGetPagination.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Response\ResponseModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Response\ResponsePost.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Response\ResponsePostDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Response\ResponsePostLastId.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Validator\IdentifierValidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Validator\MainValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Repositories\Security\" />
+  </ItemGroup>
+</Project>
